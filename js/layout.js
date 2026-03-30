@@ -72,11 +72,28 @@ var Layout = function () {
        });
     }
 
+    // handle FAQ accordion
+    var handleFAQAccordion = function() {
+        $('.faq-question').on('click', function() {
+            var $this = $(this);
+            var $answer = $this.next('.faq-answer');
+            
+            // Close all other answers
+            $('.faq-answer').not($answer).removeClass('active');
+            $('.faq-question').not($this).removeClass('active');
+            
+            // Toggle current answer
+            $this.toggleClass('active');
+            $answer.toggleClass('active');
+        });
+    }
+
     return {
         init: function () {
             handleHeaderOnScroll(); // initial setup for fixed header
             handleCarousel(); // initial setup for carousel
             handleHeight(); // initial setup for group element height
+            handleFAQAccordion(); // initial setup for FAQ accordion
 
             // handle minimized header on page scroll
             $(window).scroll(function() {
