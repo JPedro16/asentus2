@@ -1,0 +1,20 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "*.html": "html",
+            "*.css": "css",
+            "*.js": "javascript",
+            "*.scss": "scss"
+        },
+        "emmet.includeLanguages": {
+            "html": "html"
+        },
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
