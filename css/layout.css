@@ -418,6 +418,12 @@ fieldset[disabled] .btn-theme {
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
+.about-service-row .service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @media (min-width: 768px) {
   .about-service-row {
     display: flex;
