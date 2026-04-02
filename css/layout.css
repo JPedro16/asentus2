@@ -418,6 +418,30 @@ fieldset[disabled] .btn-theme {
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
+@media (min-width: 768px) {
+  .about-service-row {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .about-service-row > [class*="col-"] {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-service-row .wow,
+  .about-service-row .service,
+  .about-service-row .about-service-media {
+    height: 100%;
+  }
+
+  .about-service-row .about-service-media .img-responsive {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 /*------------------------------------------------------------------
   	[Work]
 ------------------------------------------------------------------*/
