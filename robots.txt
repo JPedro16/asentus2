@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://techmechanicx/sitemap.xml
+Sitemap: https://www.techmechanicx.com/sitemap.xml
